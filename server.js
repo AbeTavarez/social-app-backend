@@ -13,6 +13,8 @@ const PROD_URL = process.env.PROD_URL;
 
 // 1
 const whitelist = ["http://localhost:3000", PROD_URL];
+console.log(whitelist);
+
 // 2
 const corsOptions = {
   origin: function (origin, callback) {
@@ -24,7 +26,7 @@ const corsOptions = {
   }
 }
 // 3
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
