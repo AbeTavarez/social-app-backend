@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 const PROD_URL = process.env.PROD_URL;
 
 // 1
-const whitelist = ["http://localhost:3000", PROD_URL];
+const whitelist = ["http://localhost:5173", PROD_URL];
 console.log(whitelist);
 
 // 2
